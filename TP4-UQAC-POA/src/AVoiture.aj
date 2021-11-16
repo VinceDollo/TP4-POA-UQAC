@@ -13,7 +13,7 @@ public aspect AVoiture {
 		System.out.println("Voiture prete a avancer");
 	}
 	
-	pointcut getSpeed() : execution(void getvitesse(..));
+	pointcut getSpeed() : execution(void getVsitesse(..));
 
 	after() returning(Object o): getSpeed() {
 		System.out.println(formatDateTime(LocalDateTime.now()) + "Info logged transversalement. Speed info: " + 0);
