@@ -17,6 +17,7 @@ public class Main {
 
                 for (Voiture v : mesVoitures) {
                     v.deplacement();
+                    v.getVitesse();
                     System.out.println(v);
                     //surveillerVoiture(v);
                 }
